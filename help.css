@@ -1,0 +1,34 @@
+html {
+    height: 100%;
+}
+
+body {
+    height: 100%;
+    background: url(https://images.rawpixel.com/image_1000/czNmcy1wcml2YXRlL3Jhd3BpeGVsX2ltYWdlcy93ZWJzaXRlX2NvbnRlbnQvbHIvcm0zNzNiYXRjaDEzLTA4Mi1rcHhrOW5nay5qcGc.jpg?s=AOZPtYOJ-clFG-58G_MD6DCBxsLwmdQdM0jGs76NM0c) center center no-repeat;
+    background-size: cover;
+    display: flex;
+    font-family: sans-serif;
+    margin: 0;
+    overflow: hidden
+}
+
+.container {
+    margin: 5px 5px 5px 5px;
+}
+
+.container .backButton {
+    text-decoration: none;
+    color: white;
+    font-size: 2em;
+    margin-top: 2%;
+    padding-left: 1em;
+    padding-right: 1em;
+    border: solid 2px white;
+    border-radius: 20px;
+}
+
+.playground {
+    position: absolute;
+    top: 13%;
+    left: 25%;
+}

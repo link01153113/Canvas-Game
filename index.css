@@ -1,0 +1,62 @@
+html {
+    height: 100%;
+}
+
+body {
+    height: 100%;
+    background: url(https://images.rawpixel.com/image_1000/czNmcy1wcml2YXRlL3Jhd3BpeGVsX2ltYWdlcy93ZWJzaXRlX2NvbnRlbnQvbHIvcm0zNzNiYXRjaDEzLTA4Mi1rcHhrOW5nay5qcGc.jpg?s=AOZPtYOJ-clFG-58G_MD6DCBxsLwmdQdM0jGs76NM0c) center center no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: sans-serif;
+    margin: 0;
+    overflow: hidden
+}
+
+#startScreen {
+    text-align: center;
+    cursor: pointer;
+}
+
+#startScreen img {
+    display: block;
+    width: 80vw;
+    max-width: 700px;
+    height: auto;
+    transition: 0.2s
+}
+
+#startScreen a.play {
+    display: contents;
+    font-family: 'Passion One';
+    font-size: 3em;
+    color: #333;
+    font-weight: 800;
+    text-decoration: none;
+    background: rgba(0, 0, 40, 0);
+    padding: 5px 15px;
+    transition: 0.4s
+}
+
+#startScreen a.play:hover {
+    color: rgb(74, 157, 234);
+    text-shadow: 2px 5px 0 rgba(0, 0, 0, 0.6)
+}
+
+#startScreen a.help {
+    display: contents;
+    font-family: 'Passion One';
+    font-size: 3em;
+    color: #333;
+    font-weight: 800;
+    text-decoration: none;
+    background: rgba(0, 0, 40, 0);
+    padding: 5px 15px;
+    transition: 0.4s
+}
+
+#startScreen a.help:hover {
+    color: rgba(200, 80, 50, 1);
+    text-shadow: 2px 5px 0 rgba(0, 0, 0, 0.6)
+}
