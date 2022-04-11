@@ -3,7 +3,7 @@ html {
 }
 
 body {
-    height: 100%;
+    /* height: 100%; */
     background: url(https://images.rawpixel.com/image_1000/czNmcy1wcml2YXRlL3Jhd3BpeGVsX2ltYWdlcy93ZWJzaXRlX2NvbnRlbnQvbHIvcm0zNzNiYXRjaDEzLTA4Mi1rcHhrOW5nay5qcGc.jpg?s=AOZPtYOJ-clFG-58G_MD6DCBxsLwmdQdM0jGs76NM0c) center center no-repeat;
     background-size: cover;
     display: flex;
@@ -29,6 +29,21 @@ body {
 
 .playground {
     position: absolute;
-    top: 13%;
+    text-align: center;
+    top: 15%;
     left: 25%;
+}
+
+.equation {
+    position: absolute;
+    top: 18%;
+    right: 22%
+}
+
+#slope {
+    color:rgb(69, 211, 236);
+}
+
+#b {
+    color:rgb(246, 42, 65);
 }
