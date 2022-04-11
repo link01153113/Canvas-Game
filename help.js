@@ -61,9 +61,7 @@ function drawTicks() {
     ctx.closePath()
 }
 
-drawGrid()
-drawAxis()
-drawTicks()
+
 
 // Class for drawing the line
 class Line {
@@ -91,6 +89,47 @@ class Line {
     }
 }
 
-ctx.lineWidth = 3
-const line1 = new Line(-1, 0)
-line1.draw()
+// Initialize the slope and intercept value
+var slope = 0
+document.getElementById("slopeValue").value = slope
+var intercept = 0
+document.getElementById("interceptValue").value = intercept
+
+function play() {
+    ctx.clearRect(0, 0, 510, 510)
+
+    // Draw grid, axis, and ticks
+    drawGrid()
+    drawAxis()
+    drawTicks()
+
+    // Change the slope and intercept
+    inputSlope = document.getElementById("slopeValue")
+    inputIntercept = document.getElementById("interceptValue")
+    slope = inputSlope.value
+    intercept = inputIntercept.value
+    if (slope > 100) {
+        inputSlope.value = 100
+        slope = 100
+    }
+    if (slope < -100) {
+        inputSlope.value = -100
+        slope = -100
+    }
+    if (intercept > 5) { 
+        inputIntercept.value = 5
+        intercept = 5 
+    }
+    if (intercept < -5) { 
+        inputIntercept.value = -5
+        intercept = -5 
+    }
+
+    ctx.lineWidth = 3
+    const line1 = new Line(slope, intercept)
+    line1.draw()
+
+    requestAnimationFrame(play)
+}
+
+play()

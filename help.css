@@ -41,9 +41,14 @@ body {
 }
 
 #slope {
-    color:rgb(69, 211, 236);
+    color: rgb(69, 211, 236);
 }
 
 #b {
-    color:rgb(246, 42, 65);
+    color: rgb(246, 42, 65);
+}
+
+input {
+    font-size: 30px;
+    width: 5ch
 }
