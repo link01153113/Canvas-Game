@@ -184,9 +184,11 @@ function play() {
 
     // Check if the player line the same as target line
     if (line1.m == line2.m && line1.b == line2.b) {
-        alert("PASS");
-        getRandom()
-        document.location.reload();
+        setTimeout(function () {
+            getRandom()
+            document.location.reload();
+            alert("You found the  correct slope and y-intercept.")
+        }, 100);
     }
 
     requestAnimationFrame(play)
