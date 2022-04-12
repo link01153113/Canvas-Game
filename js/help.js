@@ -108,13 +108,13 @@ function play() {
     inputIntercept = document.getElementById("interceptValue")
     slope = inputSlope.value
     intercept = inputIntercept.value
-    if (slope > 100) {
-        inputSlope.value = 100
-        slope = 100
+    if (slope > 10) {
+        inputSlope.value = 10
+        slope = 10
     }
-    if (slope < -100) {
-        inputSlope.value = -100
-        slope = -100
+    if (slope < -10) {
+        inputSlope.value = -10
+        slope = -10
     }
     if (intercept > 5) { 
         inputIntercept.value = 5

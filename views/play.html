@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Help</title>
+    <link rel="stylesheet" href="../css/play.css">
+</head>
+
+<body>
+    <div class="container">
+        <a href="../index.html" class="backButton">BACK TO MENU</a>
+    </div>
+
+    <div class="playground" id="playground">
+        <canvas id="grid" width="510" height="510" style="border:3px solid #3bcbf7"></canvas>
+        <p style="font-size: 1em; color: white;">Please adjust the white line to match the target line (purple) using
+            <br>the two points provided to calculate the slope (m) and the y-intercept (b)
+        </p>
+    </div>
+    <div class="equation">
+        <p style="font-size: 3em; color: white;">y = <span id="slope">m</span>x + <span id="b">b</span></p>
+        <p style="font-size: 1em; color: white;"> First Point: <span id="pt1"></span></p>
+        <p style="font-size: 1em; color: white;"> Second Point: <span id="pt2">( , )</span></p>
+        <p style="font-size: 2em; color: white;">Slope (<span id="slope">m</span>)</p>
+        <input type="number" id="slopeValue" name="slope" min=-10 max=10 step=0.1>
+        <p style="font-size: 2em; color: white;">Y-intercept (<span id="b">b</span>)</p>
+        <input type="number" id="interceptValue" name="intercept" min=-5 max=5 step=0.1>
+    </div>
+
+    <script src="../js/play.js"></script>
+</body>
+
+</html>
