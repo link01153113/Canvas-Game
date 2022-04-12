@@ -187,7 +187,7 @@ function play() {
         setTimeout(function () {
             getRandom()
             document.location.reload();
-            alert("You found the  correct slope and y-intercept.")
+            alert("You found the correct slope and y-intercept.")
         }, 100);
     }
 
